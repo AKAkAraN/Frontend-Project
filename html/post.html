@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+    <!--Header Section-->
+    <div class="header">
+        <div class="title-container">
+            <p class="title">ScriBBler</p>
+            <p class="sub-title">Explore, Imagine, Create</p>
+        </div>
+        <div class="login-buttons-container">
+            <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
+            <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+        </div>
+    </div>
+    <div>
+        <div class="modal" id="signin-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Welcome Back!</h2>
+                </div>
+                <hr>
+                <form>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" class="area" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" class=" area" required>
+                    <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+                </form>
+
+                <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modal" id="signup-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Get Started</h2>
+                </div>
+                <hr>
+                <form>
+                    <label for="fullname" class="label-text">Full name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name" class="area" required>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" class="area" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" class="area" required>
+                    <label for="confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" id="confirm_password" placeholder="Confirm Password" class="area" required>
+                    <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Post Content-->
+    <div class="parent_container">
+        <h1 id="container_heading_1">The Legacy Of Jimi Hendrix</h1>
+        <!-- Hidden title for edit -->
+        <input type="text" id="container_heading_1_edit">
+        <div class="container_name_edit">
+            <p id="name">JIMI</p>
+            <button id="edit" onclick="edit_post()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png" /></button>
+            <!-- hidden button for save -->
+            <button id="save" onclick="save_post()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png" /></button>
+        </div>
+        <p id="post_body">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Ut ornare lectus sit amet est placerat in. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Turpis massa tincidunt dui ut ornare lectus sit amet. A diam sollicitudin tempor id eu nisl. Et netus et malesuada fames ac. Lobortis scelerisque fermentum dui faucibus in ornare quam. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Ultricies tristique nulla aliquet enim. Pretium viverra suspendisse potenti nullam ac tortor. Nibh venenatis cras sed felis eget velit aliquet. Diam quam nulla porttitor massa id neque. In massa tempor nec feugiat nisl pretium. Sem integer vitae justo eget magna fermentum. Sem viverra aliquet eget sit. In egestas erat imperdiet sed euismod nisi porta. Eleifend donec pretium vulputate sapien nec sagittis. Nibh cras pulvinar mattis nunc sed blandit. Tempus quam pellentesque nec nam. Amet risus nullam eget felis eget nunc lobortis. Nullam eget felis eget nunc lobortis. Feugiat in fermentum posuere urna nec tincidunt. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Dignissim sodales ut eu sem integer vitae justo eget. Placerat in egestas erat imperdiet sed euismod nisi porta. At volutpat diam ut venenatis tellus in metus vulputate eu. Eu non diam phasellus vestibulum. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Ut porttitor leo a diam sollicitudin tempor id. Amet volutpat consequat mauris nunc. Purus non enim praesent elementum facilisis. In est ante in nibh mauris cursus mattis molestie a. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vestibulum lorem sed risus ultricies tristique nulla. Congue quisque egestas diam in arcu cursus euismod quis viverra. Nisi vitae suscipit tellus mauris a diam maecenas sed. Morbi tempus iaculis urna id volutpat lacus laoreet non. Elementum pulvinar etiam non quam lacus suspendisse. Vitae congue eu consequat ac felis donec. Libero enim sed faucibus turpis in eu. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Accumsan in nisl nisi scelerisque. Neque convallis a cras semper auctor neque vitae tempus quam. Ullamcorper sit amet risus nullam eget felis eget nunc. Mauris cursus mattis molestie a iaculis at erat pellentesque.
+
+        </p>
+        <!-- hidden body for edit -->
+        <textarea id="post_body_edit"></textarea>
+        <button id="like" onclick="like_post()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png" />Like</button>
+        <p id="like_counter">Be first one to like this!</p>
+        <textarea id="comment_add_content" placeholder="leave a comment..."></textarea><br>
+        <button id="comment" onclick="post_comment()">Comment</button>
+        <h3 id="comment_head">ALL Comments</h3>
+        <div id="all_comment" >
+
+        </div>
+    </div>
+
+
+
+    <!--JavaScript SourceFiles-->
+
+    <script src="../script/post.js" type="text/javascript"></script>
+    <script src="../script/index.js" type="text/javascript"></script>
+</body>
+</html>

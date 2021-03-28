@@ -16,24 +16,27 @@
 
 </head>
 <body>
-  <div id="main-container-div">
-    <div class="header">
-      <div class="title-container">
-        <p class="title">ScriBBler</p>
-        <p class="sub-title">Explore, Imagine, Create</p>
-      </div>
-      <div class="login-buttons-container">
-        <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
-        <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
-      </div>
-    </div>
+    <!--Header Section-->
+    <div id="main-container-div">
+        <!--Header Division-->
+        <div class="header">
+            <div class="title-container">
+                <p class="title">ScriBBler</p>
+                <p class="sub-title">Explore, Imagine, Create</p>
+            </div>
+            <div class="login-buttons-container">
+                <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
+                <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+            </div>
+        </div>
 
-    <div class="postButtons">
-      <button onclick="navigateToBlogList()" class="yellow-button" type="button">All posts</button>
-      <button onclick="showCreatePost()" class="yellow-button" type="button">Create post</button>
-    </div>
+        <!-- Body Post Division-->
+        <div class="postButtons">
+            <button onclick="navigateToBlogList()" class="yellow-button" type="button">All Posts</button>
+            <button onclick="showCreatePost()" class="yellow-button" type="button">Create Post</button>
+        </div>
 
-  </div>
+    </div>
 
     <div>
       <div class="modal" id="signin-modal">
@@ -46,16 +49,15 @@
         <hr>
         <form>
           <label for="username" class="label-text">Username</label>
-          <input type="text" id="username" placeholder="Enter Username" required>
+          <input type="text" id="username" placeholder="Enter Username" class="area" required>
           <label for="password" class="label-text">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" required>
+          <input type="password" id="password" placeholder="Enter Password"class=" area" required>
           <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
         </form>
 
         <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
       </div>
       </div>
-
     </div>
 
     <div>
@@ -69,13 +71,13 @@
         <hr>
         <form>
           <label for="fullname" class="label-text">Full name</label>
-          <input type="text" id="fullname" placeholder="Enter Full Name" required>
+          <input type="text" id="fullname" placeholder="Enter Full Name" class ="area"required>
           <label for="username" class="label-text">Username</label>
-          <input type="text" id="username" placeholder="Enter Username" required>
+          <input type="text" id="username" placeholder="Enter Username" class ="area" required>
           <label for="password" class="label-text">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" required>
+          <input type="password" id="password" placeholder="Enter Password" class ="area" required>
           <label for="confirmpassword" class="label-text">Confirm Password</label>
-          <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+          <input type="password" id="confirm_password" placeholder="Confirm Password" class ="area" required>
           <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
         </form>
       </div>
@@ -89,13 +91,13 @@
 
           <div class="modal-head">
             <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span>
-            <h2 class="modal-title">Pen your post</h2>
+            <h2 class="modal-title">Pen Your Post</h2>
           </div>
           <form id=create-post-form>
             <label for="tile" class="label-text">Title</label>
-            <input type="text" id="title" placeholder="" required>
+            <input type="text" id="title" placeholder="" class ="area" required>
             <label for="content" class="label-text">Content</label>
-            <textarea cols="50" rows="15" name="post-details" form="create-post-form"></textarea>
+            <textarea cols="50" rows="15" name="post-details" form="create-post-form" class ="area"></textarea>
             <button type="submit" onclick="createPost()" class="create-btn">Create</button>
           </form>
         </div>
